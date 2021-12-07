@@ -5,8 +5,14 @@ const PART_TIME_HOURS = 4;
 const FULL_TIMR_HOURS = 8;
 const WAGE_PER_HOUR = 20;
 let empHrs = 0;
+let No_Days=20;
+for (let i=0;i<=No_Days;i++)
+    {
+        empHrs+=i;
+    }
 function calculateWage(empHrs){
     return WAGE_PER_HOUR * empHrs
+    
 }
 function totalEmpWage(){
     let attendence = Math.floor(Math.random()*3);
